@@ -1,6 +1,8 @@
-# Data-Analytics-for-Kaggle-Machine-Learning-Data-Science-Survey-Part-1
+# Data-Analytics-for-Kaggle-Machine-Learning-Data-Science-Survey
 
-# Background:
+# Part 1
+
+## Background:
 
 Kaggle has hosted an open data scientist competition in 2021 titled “Kaggle ML & DS Survey Challenge.” The purpose of this challenge was to “tell a data story about a subset of the data science community represented in this survey, through a combination of both narrative text and data exploration.” More information on the competition, data, and prizes can be found on: https://www.kaggle.com/c/kaggle-survey-2021/data
 
