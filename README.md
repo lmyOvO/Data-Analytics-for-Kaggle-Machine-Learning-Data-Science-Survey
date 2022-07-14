@@ -17,17 +17,17 @@ The objective of this part of the project is to explore the survey data to under
 1. Perform exploratory data analysis to analyze the survey dataset and to summarize its main characteristics. Present 3 graphical figures that represent different trends in the data. For explanatory data analysis, consider Country, Age, Education, Professional Experience, and Salary.
 
 2. Estimating the difference between average salary (Q24) of men vs. women (Q2).
-
-a. Compute and report descriptive statistics for each group (remove missing data, if
+   
+    a. Compute and report descriptive statistics for each group (remove missing data, if
 necessary).
 
-b. If suitable, perform a two-sample t-test with a 0.05 threshold. Explain the rationale.
+    b. If suitable, perform a two-sample t-test with a 0.05 threshold. Explain the rationale.
 
-c. Bootstrap data for comparing the mean of salary (Q24) for the two groups. Note that the number of instances sample from each group should be relative to its size. Use 1000 replications. Plot two bootstrapped distributions (for men and women) and the distribution of the difference in means.
+    c. Bootstrap data for comparing the mean of salary (Q24) for the two groups. Note that the number of instances sample from each group should be relative to its size. Use 1000 replications. Plot two bootstrapped distributions (for men and women) and the distribution of the difference in means.
 
-d. If suitable, perform a two-sample t-test with a 0.05 threshold on the bootstrapped data. Explain the rationale.
+    d. If suitable, perform a two-sample t-test with a 0.05 threshold on the bootstrapped data. Explain the rationale.
 
-e. Comment on findings.
+    e. Comment on findings.
 
 3. Select “highest level of formal education” (Q4) from the dataset and repeat steps a to e, this time use analysis of variance (ANOVA) instead of t-test for hypothesis testing to compare the means of salary for three groups (Bachelor’s degree, Doctoral degree, and Master’s degree)
 
@@ -55,16 +55,16 @@ Data is often split into training and testing data. The training data is typical
 1. Data cleaning:
 While the data is made ready for analysis, several values are missing, and some features are categorical. Note that some values that appear “null” indicate that a survey respondent did not select that given option from a multiple-choice list. For example – “Which of the following hosted notebook products do you use on a regular basis? (Select all that apply) - Selected Choice - Binder / JupyterHub”.
 
-For the data cleaning step, handle missing values however you see fit and justify your approach. Provide some insight on why you think the values are missing and how your approach might impact the overall analysis. Suggestions include filling the missing values with a certain value (e.g. mode for categorical data) and completely removing the features with missing values. Another method could be filling them with a separate value showing missingness, e.g., “unknown”. Secondly, convert categorical data into numerical data by encoding and explain why used this particular encoding method.
+    For the data cleaning step, handle missing values however you see fit and justify your approach. Provide some insight on why you think the values are missing and how your approach might impact the overall analysis. Suggestions include filling the missing values with a certain value (e.g. mode for categorical data) and completely removing the features with missing values. Another method could be filling them with a separate value showing missingness, e.g., “unknown”. Secondly, convert categorical data into numerical data by encoding and explain why used this particular encoding method.
 
-These tasks can be done interchangeably, e.g., encoding can be done first.
+    These tasks can be done interchangeably, e.g., encoding can be done first.
 
 2. Exploratory data analysis and feature selection:
 For the exploratory data analysis step, visualize the order of feature importance. Some possible methods include correlation plot, or a similar method. Given the data, which of the original attributes in the data are most related to a survey respondent’s yearly compensation?
 
-Explain how feature engineering is a useful tool in machine learning in the context of the tasks in this assignment. Apply feature engineering and then select the features to be used for analysis either manually or through some feature selection algorithm (e.g. regularized regression).
+    Explain how feature engineering is a useful tool in machine learning in the context of the tasks in this assignment. Apply feature engineering and then select the features to be used for analysis either manually or through some feature selection algorithm (e.g. regularized regression).
 
-Not all features need to be used; features can be removed or added as desired. If the resulting number of features is very high, dimensionality reduction can also be used (e.g. PCA). Use at least one feature selection technique – describe the technique and provide justification on why selected that set of features.
+    Not all features need to be used; features can be removed or added as desired. If the resulting number of features is very high, dimensionality reduction can also be used (e.g. PCA). Use at least one feature selection technique – describe the technique and provide justification on why selected that set of features.
 
 3. Model implementation:
 Implement ordinal logistic regression algorithm on the training data using 10-fold cross- validation. How does the model accuracy compare across the folds? What is the average and variance of accuracy for folds? Treating each value of hyperparameter(s) as a new model, which model performed best? Give the reason based on bias-variance trade-off. An output of the algorithm should be a probability of belonging to each of the salary buckets. Apply scaling/normalization of features, if necessary, and justify the reason why scaling/normalization is (not) needed.
@@ -72,7 +72,7 @@ Implement ordinal logistic regression algorithm on the training data using 10-fo
 4. Model tuning:
 Identify all hyperparameters in your model. Select two hyperparameters for model tuning and justify your selection. Improve the performance of the models from the previous step with hyperparameter tuning and select a final optimal model using grid search based on a metric (or metrics) that you choose. Choosing an optimal model for a given task (comparing multiple classifiers on a specific domain) requires selecting performance measures, for example accuracy, precision, recall and/or F1-score to compare the model performance. Justify the metric you selected. There is no minimum model accuracy, as long as the methodology is reasonable and well explained.
 
-Create the feature importance graph of the model to see which features were the most determining in model predictions. Compare this graph with the feature importance graph obtained in Section 2.
+    Create the feature importance graph of the model to see which features were the most determining in model predictions. Compare this graph with the feature importance graph obtained in Section 2.
 
 5. Testing & Discussion:
 Use the optimal model to make classifications on the test set. How does the model perform on the test set vs. the training set? The overall fit of the model, how to increase the accuracy (test, training)? Is it overfitting or underfitting? Why? Plot the distribution of true target variable values and their predictions on both the training set and test set. What are the insights gained from the dataset and the trained classification model?
