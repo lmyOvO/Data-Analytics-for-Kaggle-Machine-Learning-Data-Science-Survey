@@ -1,4 +1,4 @@
-# Data-Analytics-for-Kaggle-Machine-Learning-Data-Science-Survey
+# Data Analytics for Kaggle Machine Learning Data Science Survey Using Python
 
 # PART 1
 
