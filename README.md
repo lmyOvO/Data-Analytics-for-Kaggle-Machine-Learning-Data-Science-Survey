@@ -50,7 +50,7 @@ For the purposes of this assignment, any subset of data can be used for data exp
 
 Data is often split into training and testing data. The training data is typically further divided to create validation sets, either by just splitting, if enough data exists, or by using cross-validation within the training set. The model can be iteratively improved by tuning the hyperparameters or by feature selection.
 
-## S
+## Steps to perform:
 
 1. Data cleaning:
 While the data is made ready for analysis, several values are missing, and some features are categorical. Note that some values that appear “null” indicate that a survey respondent did not select that given option from a multiple-choice list. For example – “Which of the following hosted notebook products do you use on a regular basis? (Select all that apply) - Selected Choice - Binder / JupyterHub”.
